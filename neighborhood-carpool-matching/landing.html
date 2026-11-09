@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Waymate — Neighborhood Carpool & Verified Commute Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-body">
+
+  <!-- Header Navigation -->
+  <header class="landing-header">
+    <div class="landing-container landing-nav-inner">
+      <a class="brand" href="landing.html" aria-label="Waymate home">
+        <span class="brand-mark">W</span>
+        <div class="brand-text-wrap">
+          <span class="brand-name">waymate</span>
+          <span class="brand-badge">Neighborhood</span>
+        </div>
+      </a>
+
+      <nav class="landing-nav-links" aria-label="Landing navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#routes">Popular routes</a>
+        <a href="#safety">Safety</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="landing-nav-actions">
+        <a class="secondary-button" href="index.html">Sign in</a>
+        <a class="primary-button" href="index.html">
+          <span>Launch app</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="landing-hero">
+      <div class="landing-container">
+        <div class="hero-eyebrow-pill">
+          <span class="pill-dot"></span>
+          <span>VERIFIED NEIGHBORHOOD TRANSIT NETWORK &mdash; 2026</span>
+        </div>
+
+        <h1 class="hero-headline">
+          COMMUTE TOGETHER.<br>
+          MOVE SMARTER.<br>
+          NO EMPTY SEATS.
+        </h1>
+
+        <p class="hero-subheading">
+          A peer-to-peer neighborhood carpool network designed for everyday commuters and students. Share verified rides with local neighbors, split fuel costs fairly, and remove cars from local streets.
+        </p>
+
+        <!-- Quick Route Planner Card in Hero -->
+        <div class="hero-search-card">
+          <form class="hero-search-form" action="index.html" method="get">
+            <div class="hero-field">
+              <label for="hero-from">PICKUP NEIGHBORHOOD</label>
+              <input type="text" id="hero-from" name="from" placeholder="e.g. Model Town, Jalandhar" value="Model Town">
+            </div>
+
+            <div class="hero-field-divider"></div>
+
+            <div class="hero-field">
+              <label for="hero-to">DESTINATION HUB</label>
+              <input type="text" id="hero-to" name="to" placeholder="e.g. Lovely Professional University" value="Lovely Professional University">
+            </div>
+
+            <div class="hero-field-divider"></div>
+
+            <div class="hero-field small">
+              <label for="hero-time">DEPARTURE</label>
+              <input type="text" id="hero-time" placeholder="Today · 08:30 AM" value="08:30 AM" readonly>
+            </div>
+
+            <button type="submit" class="primary-button hero-submit-btn">
+              <span>Find rides</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Quick Route Preset Tags -->
+          <div class="hero-tags-row">
+            <span class="hero-tags-label">Popular routes:</span>
+            <div class="hero-tag-chips">
+              <a href="index.html" class="hero-chip">Model Town → LPU</a>
+              <a href="index.html" class="hero-chip">Urban Estate → Bus Stand</a>
+              <a href="index.html" class="hero-chip">BMC Chowk → Railway Station</a>
+              <a href="index.html" class="hero-chip">Adarsh Nagar → Phagwara</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="landing-metrics-strip">
+          <div class="landing-metric-item">
+            <strong>142 kg</strong>
+            <span>CO₂ offset this week</span>
+          </div>
+          <div class="landing-metric-item">
+            <strong>99.4%</strong>
+            <span>Verified commuter score</span>
+          </div>
+          <div class="landing-metric-item">
+            <strong>₹45</strong>
+            <span>Average shared fare</span>
+          </div>
+          <div class="landing-metric-item">
+            <strong>04 min</strong>
+            <span>Average match speed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Preview Section -->
+    <section class="landing-preview-section">
+      <div class="landing-container">
+        <div class="preview-card-wrap">
+          <div class="preview-browser-header">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="browser-address">waymate.app/feed/jalandhar-hub</div>
+            <div class="browser-badge">● LIVE NETWORK</div>
+          </div>
+
+          <div class="preview-inner-ui">
+            <!-- Simulated Ride Card -->
+            <div class="ride-card">
+              <div>
+                <div class="ride-topline">
+                  <span class="ride-time">Tomorrow · 08:15 AM</span>
+                  <span class="status-pill">On schedule</span>
+                  <span class="verified-pill">✓ Verified Driver</span>
+                </div>
+                <div class="route-line">
+                  <div class="route-point">
+                    <span class="route-dot"></span>
+                    <div>
+                      <small>PICKUP</small>
+                      <strong>Model Town, Jalandhar</strong>
+                    </div>
+                  </div>
+                  <div class="route-connector"></div>
+                  <div class="route-point">
+                    <span class="route-dot end"></span>
+                    <div>
+                      <small>DROP-OFF</small>
+                      <strong>Lovely Professional University (LPU)</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="ride-bottom">
+                  <div class="driver">
+                    <div class="avatar">AM</div>
+                    <div class="driver-info">
+                      <strong>Aarav Mehta</strong>
+                      <span>28 completed community rides</span>
+                    </div>
+                  </div>
+                  <span class="rating"><b>★</b> 4.9</span>
+                  <span class="seats-pill">2 seats left</span>
+                </div>
+              </div>
+              <div class="ride-actions">
+                <div class="ride-price">₹45 <small>/ seat</small></div>
+                <a class="primary-button join-button" href="index.html">Request to join</a>
+              </div>
+            </div>
+
+            <!-- Second Simulated Card -->
+            <div class="ride-card">
+              <div>
+                <div class="ride-topline">
+                  <span class="ride-time">Tomorrow · 09:00 AM</span>
+                  <span class="status-pill">Filling fast</span>
+                  <span class="verified-pill">✓ Verified Driver</span>
+                </div>
+                <div class="route-line">
+                  <div class="route-point">
+                    <span class="route-dot"></span>
+                    <div>
+                      <small>PICKUP</small>
+                      <strong>Urban Estate Phase 2</strong>
+                    </div>
+                  </div>
+                  <div class="route-connector"></div>
+                  <div class="route-point">
+                    <span class="route-dot end"></span>
+                    <div>
+                      <small>DROP-OFF</small>
+                      <strong>Jalandhar City Bus Stand</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="ride-bottom">
+                  <div class="driver">
+                    <div class="avatar">RS</div>
+                    <div class="driver-info">
+                      <strong>Riya Sharma</strong>
+                      <span>16 completed community rides</span>
+                    </div>
+                  </div>
+                  <span class="rating"><b>★</b> 5.0</span>
+                  <span class="seats-pill">1 seat left</span>
+                </div>
+              </div>
+              <div class="ride-actions">
+                <div class="ride-price">₹30 <small>/ seat</small></div>
+                <a class="primary-button join-button" href="index.html">Request to join</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="landing-section" id="how-it-works">
+      <div class="landing-container">
+        <div class="section-heading-centered">
+          <div class="eyebrow">HOW WAYMATE WORKS</div>
+          <h2>Simple, verified, predictable carpooling.</h2>
+          <p class="section-desc">Designed to replace single-occupancy vehicle commutes with efficient shared neighborhood routes.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3>Plan or offer your commute</h3>
+            <p>Enter your starting neighborhood, campus or workplace drop-off, and regular departure time. Whether you need a seat or have empty seats to share.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3>Match with verified peers</h3>
+            <p>Waymate surfaces commuters heading on your exact route schedule. Every profile displays institutional verification and trip reviews.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3>Meet, travel & split costs</h3>
+            <p>Rendezvous at a safe public pickup landmark. Share fuel contributions transparently with zero surge fees or middleman markups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="landing-section bg-subtle" id="features">
+      <div class="landing-container">
+        <div class="section-heading-centered">
+          <div class="eyebrow">BUILT DIFFERENTLY</div>
+          <h2>Designed for neighborhood trust.</h2>
+          <p class="section-desc">We reimagined shared transit around community safety, fairness, and environmental impact.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>100% Verified Members</h3>
+            <p>Every driver and rider is verified via university or workplace credentials and government ID. No anonymous accounts.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Zero Surge Pricing</h3>
+            <p>Fares are calculated strictly as equal fuel-cost contributions. You never pay dynamic price hikes during rush hours or rain.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Predictable Schedules</h3>
+            <p>Scheduled commutes give drivers and passengers guaranteed consistency every morning without last-minute hunting.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Privacy Route Vicinity</h3>
+            <p>Exact addresses stay private. Waymate surfaces convenient public pickup nodes like town centers, metro gates, and chowks.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22h20"/>
+                <path d="M12 2v20"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>CO₂ Impact Tracking</h3>
+            <p>Every shared ride calculates carbon emissions prevented, turning your daily commute into measurable sustainability.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Local Peer Network</h3>
+            <p>Turn wasted transit time into meaningful connections with neighbors, colleagues, and fellow students on your route.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Routes Showcase -->
+    <section class="landing-section" id="routes">
+      <div class="landing-container">
+        <div class="section-heading-centered">
+          <div class="eyebrow">NETWORK ROUTES</div>
+          <h2>Popular neighborhood corridors.</h2>
+          <p class="section-desc">Daily scheduled shared departures with active drivers today.</p>
+        </div>
+
+        <div class="routes-grid">
+          <div class="route-corridor-card">
+            <div class="corridor-header">
+              <span class="corridor-tag">STUDENT CORRIDOR</span>
+              <span class="corridor-fare">₹45 / seat</span>
+            </div>
+            <div class="corridor-path">
+              <strong>Model Town</strong>
+              <span class="corridor-arrow">→</span>
+              <strong>LPU Campus</strong>
+            </div>
+            <div class="corridor-meta">
+              <span>Avg travel time: 25 min</span>
+              <span>12 departures daily</span>
+            </div>
+            <a href="index.html" class="secondary-button corridor-btn">Find rides on this route</a>
+          </div>
+
+          <div class="route-corridor-card">
+            <div class="corridor-header">
+              <span class="corridor-tag">TRANSIT HUB</span>
+              <span class="corridor-fare">₹30 / seat</span>
+            </div>
+            <div class="corridor-path">
+              <strong>Urban Estate Phase 2</strong>
+              <span class="corridor-arrow">→</span>
+              <strong>Bus Stand</strong>
+            </div>
+            <div class="corridor-meta">
+              <span>Avg travel time: 18 min</span>
+              <span>8 departures daily</span>
+            </div>
+            <a href="index.html" class="secondary-button corridor-btn">Find rides on this route</a>
+          </div>
+
+          <div class="route-corridor-card">
+            <div class="corridor-header">
+              <span class="corridor-tag">COMMUTER EXPRESS</span>
+              <span class="corridor-fare">₹25 / seat</span>
+            </div>
+            <div class="corridor-path">
+              <strong>BMC Chowk</strong>
+              <span class="corridor-arrow">→</span>
+              <strong>Railway Station</strong>
+            </div>
+            <div class="corridor-meta">
+              <span>Avg travel time: 14 min</span>
+              <span>10 departures daily</span>
+            </div>
+            <a href="index.html" class="secondary-button corridor-btn">Find rides on this route</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="landing-section bg-subtle" id="safety">
+      <div class="landing-container">
+        <div class="safety-showcase">
+          <div class="safety-text">
+            <div class="eyebrow">SAFETY & INTEGRITY</div>
+            <h2>Travel with peace of mind.</h2>
+            <p>Safety is not an afterthought at Waymate &mdash; it is the foundation of our neighborhood trust architecture.</p>
+
+            <div class="safety-checklist">
+              <div class="safety-check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Mandatory Profile Verification</strong>
+                  <p>Members provide valid institutional credentials before booking or listing rides.</p>
+                </div>
+              </div>
+
+              <div class="safety-check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Public Pickup Landmarks</strong>
+                  <p>Departures happen at well-lit, familiar public spots rather than secluded private lanes.</p>
+                </div>
+              </div>
+
+              <div class="safety-check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Mutual Rating System</strong>
+                  <p>Drivers and passengers review each other after every trip, preserving community standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="safety-badge-card">
+            <div class="safety-badge-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Community Trust Pledge</h3>
+            <p>Zero tolerance for harassment, price gouging, or unsafe transit behavior. Report issues directly to community moderators.</p>
+            <div class="safety-stats-row">
+              <div>
+                <strong>99.4%</strong>
+                <small>Trust Rating</small>
+              </div>
+              <div>
+                <strong>0%</strong>
+                <small>Surge Fees</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="landing-section">
+      <div class="landing-container">
+        <div class="section-heading-centered">
+          <div class="eyebrow">COMMUNITY VOICES</div>
+          <h2>Trusted by local commuters.</h2>
+          <p class="section-desc">Real feedback from neighborhood members commuting daily across Jalandhar corridors.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">Waymate replaced my chaotic daily auto-rickshaw search with a comfortable shared carpool to LPU. I save roughly ₹1,800 every month.</p>
+            <div class="testimonial-author">
+              <div class="avatar">AM</div>
+              <div class="testimonial-meta">
+                <strong>Ananya Kapoor</strong>
+                <span>Student, Model Town to LPU</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">I drive from Urban Estate to my office near Bus Stand every weekday. Hosting two fellow neighbors covers my entire fuel bill and makes the commute sociable.</p>
+            <div class="testimonial-author">
+              <div class="avatar">RS</div>
+              <div class="testimonial-meta">
+                <strong>Rohan Sehgal</strong>
+                <span>Civil Engineer, Urban Estate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">The identity verification gives real peace of mind. Knowing everyone is university or work-verified makes carpooling feel completely secure.</p>
+            <div class="testimonial-author">
+              <div class="avatar">PS</div>
+              <div class="testimonial-meta">
+                <strong>Pooja Sharma</strong>
+                <span>Research Scholar, Jalandhar Hub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="landing-section bg-subtle" id="faq">
+      <div class="landing-container">
+        <div class="section-heading-centered">
+          <div class="eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+          <h2>Everything you need to know.</h2>
+          <p class="section-desc">Common questions about joining, pricing, and scheduling on the Waymate network.</p>
+        </div>
+
+        <div class="landing-faq-wrap">
+          <details class="faq-item" open>
+            <summary>
+              <span>How are shared ride contributions calculated?</span>
+              <span class="faq-icon-arrow">+</span>
+            </summary>
+            <div class="faq-content">
+              Waymate calculates fixed fares based solely on splitting estimated fuel costs for the route distance across passenger seats. There are zero peak-hour multipliers, surge algorithms, or hidden booking fees.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How does member verification work?</span>
+              <span class="faq-icon-arrow">+</span>
+            </summary>
+            <div class="faq-content">
+              Commuters verify their account using institutional email addresses (university or corporate) along with phone authentication. Drivers must additionally supply their vehicle registration and valid driving license.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can I book or offer rides for regular morning commutes?</span>
+              <span class="faq-icon-arrow">+</span>
+            </summary>
+            <div class="faq-content">
+              Yes. Most Waymate journeys are recurring daily commutes between residential sectors (such as Model Town and Urban Estate) and major hubs like Lovely Professional University, railway stations, and commercial complexes.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What if my schedule changes or I need to cancel?</span>
+              <span class="faq-icon-arrow">+</span>
+            </summary>
+            <div class="faq-content">
+              You can cancel pending requests or scheduled rides anytime directly from the "My requests" dashboard. We ask members to provide at least 30 minutes advance notice so matched neighbors can adapt their plans.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="landing-cta-section">
+      <div class="landing-container">
+        <div class="landing-cta-banner">
+          <div class="cta-content">
+            <div class="eyebrow">START COMMUTING TODAY</div>
+            <h2>Ready to find your way together?</h2>
+            <p>Join over 2,400 verified neighbors in Jalandhar sharing simpler, cleaner journeys every day.</p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="primary-button cta-primary" href="index.html">
+              <span>Launch Waymate workspace</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a class="secondary-button cta-secondary" href="index.html">Create a ride request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Editorial Landing Footer -->
+  <footer class="landing-footer">
+    <div class="landing-container landing-footer-inner">
+      <div class="footer-col-brand">
+        <a class="brand" href="landing.html">
+          <span class="brand-mark">W</span>
+          <div class="brand-text-wrap">
+            <span class="brand-name">waymate</span>
+            <span class="brand-badge">Neighborhood Carpool</span>
+          </div>
+        </a>
+        <p class="footer-mission">Built for safer, simpler, and cleaner shared journeys across neighborhood communities.</p>
+        <span class="footer-copy">&copy; 2026 Waymate Inc. All rights reserved.</span>
+      </div>
+
+      <div class="footer-col-links">
+        <strong>COMMUNITY</strong>
+        <a href="index.html">Ride feed</a>
+        <a href="index.html">Find a ride</a>
+        <a href="index.html">My requests</a>
+        <a href="index.html">Jalandhar Hub</a>
+      </div>
+
+      <div class="footer-col-links">
+        <strong>ABOUT</strong>
+        <a href="#how-it-works">How it works</a>
+        <a href="#safety">Safety pledge</a>
+        <a href="#features">Impact metrics</a>
+        <a href="#routes">Corridors</a>
+      </div>
+
+      <div class="footer-col-links">
+        <strong>LEGAL & PRIVACY</strong>
+        <a href="index.html">Privacy controls</a>
+        <a href="index.html">Terms of service</a>
+        <a href="index.html">Community guidelines</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
